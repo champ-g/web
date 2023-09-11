@@ -1,0 +1,465 @@
+web programs
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pic Gallery</title>
+    <style>
+        /* Navbar styles */
+        body {
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            height: 30px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .navbar li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .gallery img {
+            border: solid 2px black;
+            border-radius: 20px;
+
+            width: 200px;
+            height: 250px;
+            margin: 10px;
+            margin-top: 10px;
+            object-fit: cover;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <h1>Pictures Gallery</h1>
+    <div class="gallery">
+        <img src="C:\Users\91630\Pictures\Saved Pictures\DSC02258.JPG" alt="Image 1">
+        <img src="C:\Users\91630\Pictures\Saved Pictures\IMG_20150118_231218.jpg" alt="Imagae 2">
+        <img src="C:\Users\91630\Pictures\Saved Pictures\DSC_0077.JPG" alt="Image 3">
+        <img src="C:\Users\91630\Pictures\Saved Pictures\IMG-20180311-WA0005.jpg" alt="Image 4">
+        <img src="C:\Users\91630\Pictures\Screenshots\Screenshot (532).jpg" alt="Image 5">
+    </div>
+</body>
+
+</html>   
+
+
+
+--------------------------------------------
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Navbar Example</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <h1>Our Content</h1>
+    <div class="content">
+        <div class="con-txt">
+            <p>Rnsit Consists of more than 20 technical and non-technical clubs which have conducted over 1000+ exciting activities and have won over 100+ inter-college competitons
+            </p>
+        </div>
+        <img src="img1.jpg" alt="">
+    </div>
+    <div class="content2">
+        <img src="img1.jpg" alt="">
+        <div class="con-txt2">
+            <p>Rnsit Consists of more than 20 technical and non-technical clubs which have conducted over 1000+ exciting activities and have won over 100+ inter-college Competions </p>
+        </div>
+    </div>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            height: 30px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .navbar li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .content {
+            display: flex;
+            margin-left: 70px;
+            margin-top: 70px;
+            margin-bottom: 70px;
+        }
+
+        .con-txt {
+            font-size: 25px;
+            justify-content: center;
+        }
+
+        .con-txt p {
+            width: 600px;
+            height: auto;
+            color: rgb(52, 175, 81);
+        }
+
+        img {
+            margin-left: 100px;
+            width: 200px;
+            height: 150px;
+            border-radius: 40px;
+            border: solid 5px black;
+        }
+
+        .content2 {
+            display: flex;
+            margin-left: 70px;
+        }
+
+        .con-txt2 {
+            font-size: 25px;
+            justify-content: center;
+            float: right;
+            margin-right: 25%;
+            color: brown;
+        }
+
+        .con-txt2 p {
+            width: 600px;
+            height: auto;
+        }
+    </style>
+</body>
+
+</html>
+
+-----------------------------------------------------
+
+
+
+<html>
+
+<head>
+    <title>WT Lab manual program no. 3</title>
+</head>
+<style>
+    h1 {
+        color: rgb(234, 140, 140);
+        text-align: center;
+    }
+
+    .textbox1 {
+        color: rgb(12, 157, 179);
+        font-size: 30px;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <center>
+        <h1> Select the country name to find its capital</h1>
+        <form name="myform">
+            Select Country <select name="country" id="sbox1" onClick="myFunction()" required>
+                <option value=""></option>
+                <option value="NEW DELHI">INDIA</option>
+                <option value="CANBERRA">AUSTRALIA</option>
+                <option value="WASHINGTON D.C">AMERICA</option>
+                <option value="LONDON">UNITED KINGDOM</option>
+                <option value="BERLIN">GERMANY</option>
+            </select><br><br>
+            Capital <input type="text" class="textbox1" id="sbox2">
+        </form>
+    </center>
+    <script>
+        function myFunction() {
+            var a = document.getElementById("sbox1").value;
+            document.getElementById("sbox2").value = a;
+        }
+    </script>
+</body>
+
+</html>
+
+---------------------------------------------------
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Fibonacci Series in JavaScript </title>
+</head>
+
+<body>
+    <script>
+        // declaration of the variables  
+        var n1 = 0, n2 = 1, next_num, i;
+        var num = parseInt(prompt(" Enter the limit for Fibonacci Series "));
+        document.write("Fibonacci Series: ");
+        for (i = 1; i <= num; i++) {
+            document.write(" <br> " + n1); // print the n1  
+            next_num = n1 + n2; // sum of n1 and n2 into the next_num  
+
+            n1 = n2; // assign the n2 value into n2  
+            n2 = next_num; // assign the next_num into n2  
+        }
+
+    </script>
+</body>
+
+</html>
+
+
+=---------------------------------------
+
+
+<!DOCTYPEHTML>
+    <html>
+
+    <head>
+        <style>
+            table,
+            tr,
+            td {
+                border: solid black;
+                width: 33%;
+                text-align: center;
+                border-collapse: collapse;
+                background-color: lightblue;
+            }
+
+            table {
+                margin: auto;
+            }
+        </style>
+        <script>
+            document.write("<table><tr><th colspan='3'> NUMBERS FROM 0 TO 10 WITH THEIR SQUARES AND CUBES </th></tr><tr><td>Number</td><td>Square</td><td>Cube</td></tr>");
+            for (var n = 0; n <= 10; n++) {
+                document.write("<tr><td>" + n + "</td><td>" + n * n + "</td><td>" + n * n * n + "</td></tr>");
+            }
+            document.write("</table>");
+        </script>
+    </head>
+
+    </html>
+
+----------------------------------------------------------
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <center>
+        <p id="demo" />
+    </center>
+    <script>
+        var var1 = setInterval(inTimer, 1000);
+        var size = 5;
+        var ids = document.getElementById("demo");
+        function inTimer()
+         {
+            size += 5;
+            ids.innerHTML = "TEXT GROWING";
+            ids.setAttribute("style", "font-size:" + size + "px; color:red");
+            if (size >= 50) {
+                clearInterval(var1);
+                var var2 = setInterval(deTimer, 1000);
+            }
+        }
+        function deTimer() 
+        {
+            size -= 5;
+            ids.innerHTML = "TEXT SHRINKING";
+            ids.setAttribute("style", "font-size:" + size + "px; color:blue");
+            if (size <= 5) {
+                clearInterval(var1);
+
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+--------------------------------------------------
+
+
+
+<html>
+<head><title>Date</title></head>
+<body>
+    <script>
+        function display() 
+        {
+            var x = "You have clicked";
+            var d = new Date();
+            var date = d.getDate();
+            var month = d.getMonth();
+            month++;
+            var year = d.getFullYear();
+            document.getElementById("dis").value = date + "/" + month + "/" + year;
+        }
+    </script>
+    <form>
+        <input type="text" id="dis">
+        <br>
+        <input type="button" value="Display Date" onclick="display()">
+    </form>
+
+    <body>
+
+</html>
+
+------------------------------------------------------
+
+
+<html>
+
+<head>
+    <title> Multiplication Table </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        var n = prompt("Enter positive value for n: ");
+        if (!isNaN(n)) 
+        {
+            var table = "";
+           
+            for (i = 1; i <= 10; i++) 
+            {
+                table += n + " * " + i + " = " + n * i + "\n";
+            }
+            alert(table);
+        }
+        else 
+        {
+            alert("Enter positive value");
+            n = prompt("Enter positive value for n: ", " ");
+        }
+        document.write(n + " table values displayed using alert ..<br />");
+    </script>
+</body>
+
+</html>
+
+--------------------------------------------
+
+
+<!DOCTYPE html>
+<html>
+<script type='text/javascript'>
+    function formValidator() 
+    {
+        var usn = document.getElementById('req1');
+        alert(usn.value);
+        if (isCorrect(usn)) 
+        {
+            return true;
+        }
+        return false;
+    }
+    function isCorrect(usn) 
+    {
+        alphaExp1 = /[1-4][A-Z][A-Z][0-9][0-9][A-Z][A-Z][0-9][0-9][0-9]$/
+        if (usn.value.length == 0) 
+        {
+            alert("US Number is empty");
+            usn.focus();
+            return false;
+
+        }
+        else if (!usn.value.match(alphaExp1)) 
+        {
+            alert("US Number should be in DAADDAADDD format");
+            usn.focus();
+            return false;
+        }
+        alert("US Number IS CORRECT");
+        return true;
+    }
+</script>
+
+<body>
+    <form onsubmit='return formValidator()'>
+        Enter your USN. in DAADDAADDD format : <input type='text' id='req1' >
+        <input type='submit' value='Check Field' >
+    </form>
+</body>
+
+</html>
+
+
